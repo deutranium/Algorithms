@@ -1,31 +1,18 @@
-#import time
+def search(arr, x, lo, hi):	# hi = index of last element + 1
+	idx = (lo + hi)//2
 
-#beginTime = time.time()
-
-# An array sorted in ascending order
-arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-l = len(arr)
-x = 0
-
-def search(x, start, end, arr):
-	idx = (start + end)//2
-
-	if (start == end - 1) and (arr[start] != x) and (arr[end] != x):
+	if (lo == hi - 1) and (arr[lo] != x) and (arr[hi] != x):
 		return -1
 	elif x == arr[idx]:
 		return idx
 	elif x > arr[idx]:
-		return(search(x, idx, end, arr))
+		return(search(arr, x, idx, hi))
 	else:
-		return(search(x, 0, idx, arr))
+		return(search(arr, x, 0, idx))
 
-print(search(x, 0, len(arr), arr)) # Why not (len(arr) - 1)??
+# Sample testcase - an array sorted in ascending order
+arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+l = len(arr)
+x = 2
 
-
-#for i in range(10000):
-#	search(i % 10, 0, l, arr)
-#	# Why not (l - 1)??
-#
-#endTime = time.time()
-
-#print("time: " + str(endTime - beginTime))
+print(search(arr, x, 0, l)) # Why not (len(arr) - 1)??

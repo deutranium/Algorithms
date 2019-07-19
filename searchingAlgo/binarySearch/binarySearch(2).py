@@ -1,39 +1,19 @@
-#import time
-#startTime = time.time()
+def recur(arr, x, lo, hi):
+	mid = (lo + hi)//2
 
-def recur(arr, x, lI, uI):
-	mI = (lI + uI)//2
-
-	if x == arr[mI]:
-		return mI
-	elif x > arr[mI]:
-		return(recur(arr, x, mI, uI))
+	if x == arr[mid]:
+		return mid
+	elif x > arr[mid]:
+		return(recur(arr, x, mid, hi))
 	else:
-		return(recur(arr, x, lI, mI))
+		return(recur(arr, x, lo, mid))
 
-def main(x):
-	try:
-		return(recur(arr, x, 0, len(arr)))
-	except:
-		return -1
-
-# An array sorted in ascending order
+# Sample testcase - an array sorted in ascending order
 arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
 l = len(arr)
-x = 0
+x = 2
 
-print(main(x))
-
-#for i in range(10000):
-#	main(i % 10)
-
-#endTime = time.time()
-
-#print("time: " + str(endTime - startTime))
-
-
-"""
-
-"""
-
+try:
+	print(recur(arr, x, 0, len(arr)))
+except:
+	print(-1)
