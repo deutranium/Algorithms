@@ -15,7 +15,7 @@ def binarySearch(arr, x, lo, hi):	# `hi` as one greater than the index of the la
 	else:
 		return(binarySearch(arr, x, 0, idx))
 
-# Sample testcases
+# Testcase
 arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 x = 2
 

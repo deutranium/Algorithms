@@ -5,7 +5,7 @@ int search(char* arr[], int lgt, char* x);
 
 int main(void) {
 
-	//Sample input
+	// Testcase
 	char* arr[] = {"a", "b", "c", "d"};
 	char* x = "b";
 

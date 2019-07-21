@@ -5,7 +5,7 @@ function search(arr, x){
 	return -1
 }
 
-// Sample input
+// Testcase
 arr = ["a", "b", "c", "d"];
 x = "b";
 

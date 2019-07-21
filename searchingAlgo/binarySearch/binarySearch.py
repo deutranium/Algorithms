@@ -1,18 +1,18 @@
-def search(arr, x, lo, hi):	# hi = index of last element + 1
-	idx = (lo + hi)//2
+def recur(arr, x, lo, hi):
+	mid = (lo + hi)//2
 
-	if (lo == hi - 1) and (arr[lo] != x) and (arr[hi] != x):
-		return -1
-	elif x == arr[idx]:
-		return idx
-	elif x > arr[idx]:
-		return(search(arr, x, idx, hi))
+	if x == arr[mid]:
+		return mid
+	elif x > arr[mid]:
+		return(recur(arr, x, mid, hi))
 	else:
-		return(search(arr, x, 0, idx))
+		return(recur(arr, x, lo, mid))
 
-# Sample testcase - an array sorted in ascending order
+# Testcase
 arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-l = len(arr)
 x = 2
 
-print(search(arr, x, 0, l)) # Why not (len(arr) - 1)??
+try:
+	print(recur(arr, x, 0, len(arr)))
+except:
+	print(-1)
