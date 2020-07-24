@@ -21,7 +21,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 ### [Sorting Algorithms](sortingAlgo)
 - Bucket Sort
 - Comb Sort
-- Counting Sort
+- [Counting Sort](sortingAlgo/countingSort)
 - Cycle Sort
 - Heap Sort
 - [Insertion Sort](sortingAlgo/insertionSort)
