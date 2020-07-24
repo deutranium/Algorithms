@@ -23,7 +23,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Comb Sort
 - Counting Sort
 - Cycle Sort
-- [Heap Sort](sortinAlgo/heapSort)
+- [Heap Sort](sortingAlgo/heapSort)
 - [Insertion Sort](sortingAlgo/insertionSort)
 - [Merge Sort](sortingAlgo/mergeSort)
 - Pigeonhole Sort
