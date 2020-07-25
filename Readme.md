@@ -23,13 +23,12 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Comb Sort
 - [Counting Sort](sortingAlgo/countingSort)
 - Cycle Sort
-- Cycle Sort
 - [Heap Sort](sortingAlgo/heapSort)
 - [Insertion Sort](sortingAlgo/insertionSort)
 - [Merge Sort](sortingAlgo/mergeSort)
 - Pigeonhole Sort
 - Quick Sort
-- Radix Sort
+- [Radix Sort](sortingAlgo/radixSort)
 - [Selection Sort](sortingAlgo/selectionSort)
 - Shell Sort
 
