@@ -1,7 +1,10 @@
 #TC
 arr = [10, 7, 8, 1, 4, 2, 5]
 
-def countingSort(arr, k, key=(lambda x:x)):
+def countingSort(arr, key=(lambda x:x), k=-1):
+    if k==-1:
+        k=max(arr)
+        
     table = [[] for _ in range(k+3)]
 
     for n in arr:

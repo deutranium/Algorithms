@@ -1,7 +1,10 @@
 #TC
 arr = [10, 7, 8, 1, 4, 2, 5]
 
-def countingSort(arr, k, key=(lambda x:x)):
+def countingSort(arr, k=-1, key=(lambda x:x)):
+    if k==-1:
+        k = max(arr)
+         
     table = [[] for _ in range(k+3)]
 
     for n in arr:
@@ -12,9 +15,12 @@ def countingSort(arr, k, key=(lambda x:x)):
         arr.extend(i)
     return arr
 
-def radixSort(arr, k):
+def radixSort(arr, k=-1):
     b = len(arr) # base for radix sort
-    
+
+    if k==-1:
+        k = max(arr)
+
     #calculate number of digits in k when in base b
     d = 0
     copy = k
@@ -27,4 +33,5 @@ def radixSort(arr, k):
     
     return arr
 
-print(radixSort(arr, 15))
+    
+print(radixSort(arr))
