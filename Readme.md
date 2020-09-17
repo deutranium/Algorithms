@@ -1,6 +1,11 @@
 [![Updated Badge](https://badges.pufler.dev/updated/deutranium/Algorithms)](https://badges.pufler.dev)
 [![Created Badge](https://badges.pufler.dev/created/deutranium/Algorithms)](https://badges.pufler.dev)
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/deutranium/Algorithms.svg)](https://GitHub.com/Naereen/StrapDown.js/pull/)
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/pull/)
+[![GitHub contributors](https://img.shields.io/github/contributors/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/graphs/contributors/)
+
 # Algorithms
 
 Basically these are supposed to be my notes, but feel free to use them as you wish to.
