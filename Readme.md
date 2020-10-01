@@ -51,6 +51,6 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Miller-Rabin Method
 - Solovay-Strassen Method
 
-### [Classic Alogorithms]
+### [Classic Alogorithms](ClassicAlgos)
 - Kosaraju's algorithm
 - tries
