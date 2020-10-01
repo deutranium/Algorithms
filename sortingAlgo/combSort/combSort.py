@@ -40,8 +40,3 @@ def comb_sort(arr):
                 # Sets [swapped] to true when a swap is done
                 swapped = True
     return arr
-
-
-if __name__ == '__main__':
-    arr = [int(x) for x in input().split()]
-    print(comb_sort(arr))
