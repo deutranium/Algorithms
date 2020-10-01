@@ -17,6 +17,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Searching](#searching-algorithms)
 - [Sorting](#sorting-algorithms)
 - [Primality Test](#primality-test)
+- [Classic algorithms](#classic-algos)
 
 <hr>
 
@@ -49,3 +50,6 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Fermat Method
 - Miller-Rabin Method
 - Solovay-Strassen Method
+
+### [Classic Alogorithms]
+- Kosaraju's algorithm
