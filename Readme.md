@@ -17,7 +17,8 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Ensure that no one is working on (or already completed) the algorithm abd language you want to work on
 - Use descriptive comit messages
 - You can create an issue for the algorithm you want to claim and work on
-- Follow the directory structure
+- **FOLLOW THE DIRECTORY STRUCTURE AND NAMING CONVENTION**
+- **UPDATE THE README AS YOU WORK ON A NEW ALGO**
 
 
 ## Types of Algorithms
