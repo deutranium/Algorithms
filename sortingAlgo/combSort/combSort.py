@@ -34,8 +34,10 @@ def comb_sort(arr):
         gap = next_gap(gap)
 
         for index in range(0, arr_size - gap):
+            # Swaps the target indices if the left index is grester than the right index
             if arr[index] > arr[index + gap]:
                 arr[index], arr[index + gap] = arr[index + gap], arr[index]
+                # Sets [swapped] to true when a swap is done
                 swapped = True
     return arr
 
