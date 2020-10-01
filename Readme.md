@@ -49,7 +49,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Insertion Sort](sortingAlgo/insertionSort)
 - [Merge Sort](sortingAlgo/mergeSort)
 - Pigeonhole Sort
-- Quick Sort
+- [Quick Sort](sortingAlgo/quickSort)
 - [Radix Sort](sortingAlgo/radixSort)
 - [Selection Sort](sortingAlgo/selectionSort)
 - Shell Sort
