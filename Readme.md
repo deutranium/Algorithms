@@ -2,9 +2,13 @@
 [![Created Badge](https://badges.pufler.dev/created/deutranium/Algorithms)](https://badges.pufler.dev)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/deutranium/Algorithms.svg)](https://GitHub.com/Naereen/StrapDown.js/pull/)
-[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/pull/)
 [![GitHub contributors](https://img.shields.io/github/contributors/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/graphs/contributors/)
+
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/pull/)
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/deutranium/Algorithms.svg)](https://github.com/deutranium/Algorithms/pulls?q=is%3Apr+is%3Aclosed)
+[![GitHub issues](https://img.shields.io/github/issues/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/issues/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/issues?q=is%3Aissue+is%3Aclosed)
+
 
 # Algorithms
 
