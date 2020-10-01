@@ -14,7 +14,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### TLDR of contributing.md:
 
-- Ensure that no one is working on (or already completed) the algorithm abd language you want to work on
+- Ensure that no one is working on (or already completed) the algorithm and language you want to work on
 - Use descriptive comit messages
 - You can create an issue for the algorithm you want to claim and work on
 - **FOLLOW THE DIRECTORY STRUCTURE AND NAMING CONVENTION**
@@ -33,18 +33,18 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 ### [Searching Algorithms](searchingAlgo)
 - [Binary Search](searchingAlgo/binarySearch)
 - [Exponential Search](searchingAlgo/exponentialSearch)
-- Fibonacci Search
+- [Fibonacci Search](searchingAlgo/fibonacciSearch)
 - [Interpolation Search](searchingAlgo/interpolationSearch)
 - [Jump Search](searchingAlgo/jumpSearch)
 - [Linear Search](searchingAlgo/linearSearch)
-- Sublist Search
+- [Sublist Search](searchingAlgo/sublistSearch)
 - [Ternary Search](searchingAlgo/ternarySearch)
 
 ### [Sorting Algorithms](sortingAlgo)
-- Bucket Sort
+- [Bucket Sort](sortingAlgo/bucketsort)
 - Comb Sort
 - [Counting Sort](sortingAlgo/countingSort)
-- Cycle Sort
+- [Cycle Sort](sortingAlgo/cycleSort)
 - [Heap Sort](sortingAlgo/heapSort)
 - [Insertion Sort](sortingAlgo/insertionSort)
 - [Merge Sort](sortingAlgo/mergeSort)
@@ -52,7 +52,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Quick Sort](sortingAlgo/quickSort)
 - [Radix Sort](sortingAlgo/radixSort)
 - [Selection Sort](sortingAlgo/selectionSort)
-- Shell Sort
+- [Shell Sort](sortingAlgo/ShellSort)
 
 ### [Primality Test](primalityTest)
 - [Optimised School Method](primalityTest/optimisedSchoolMethod) (Check factors till √n)
@@ -61,5 +61,5 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - Solovay-Strassen Method
 
 ### [Classic Alogorithms](ClassicalAlgos)
-- Kosaraju's algorithm
-- tries
+- [Kosaraju's algorithm](ClassicalAlgos/Kosaraju'sAlgo)
+- [tries](ClassicalAlgos/tries)
