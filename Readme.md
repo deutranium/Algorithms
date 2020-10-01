@@ -12,6 +12,14 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 **Note: Please read CONTRIBUTING.md before making any pull requests**
 
+### TLDR of contributing.md:
+
+- Ensure that no one is working on (or already completed) the algorithm abd language you want to work on
+- Use descriptive comit messages
+- You can create an issue for the algorithm you want to claim and work on
+- Follow the directory structure
+
+
 ## Types of Algorithms
 
 - [Searching](#searching-algorithms)
