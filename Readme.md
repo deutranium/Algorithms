@@ -53,3 +53,4 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### [Classic Alogorithms]
 - Kosaraju's algorithm
+- tries
