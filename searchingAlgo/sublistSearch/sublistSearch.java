@@ -10,7 +10,7 @@ class Node {
     }
 }
 
-public class sublist {
+public class sublistSearch {
 	public static boolean sublistSearch(Node subList, Node list) {
 		if(subList == null && list == null) {
 			return true;
