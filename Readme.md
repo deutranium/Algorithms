@@ -62,7 +62,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Optimised School Method](primalityTest/optimisedSchoolMethod) (Check factors till √n)
 - Fermat Method
 - Miller-Rabin Method
-- Solovay-Strassen Method
+- [Solovay-Strassen Method](primalityTest/solovayStrassenMethod)
 
 ### [Classic Alogorithms](ClassicalAlgos)
 - [Kosaraju's algorithm](ClassicalAlgos/Kosaraju'sAlgo)
