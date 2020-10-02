@@ -1,26 +1,27 @@
-    Time Complexity O(nlogn)  n: size of the array
-    Space Complexity : O(n)   n: size of the array
-    
-    ALGORITHM :
-    Merge_sort (arr, left, right)
+**MERGE SORT**
 
-        if left < right                                                    
+Time Complexity: **O(nlogn)**  n: size of the array </br>
+Space Complexity : **O(n)**   n: size of the array </br>
+
+ **ALGORITHM**</br>
+ 
+        Merge_sort (arr, left, right)
+        
+           if left < right                                                    
              THEN mid <= left+(right-left)/2
                 merge_sort(arr,left,mid)
                 merge_sort(arr, mid+1, right)
                 merge(arr, l,r);
-      else 
-        return
-    endif 
-    
-    
-    Merge Sort is based on Divide and Conquer, which means we divide a problem to smaller subproblems and try to solve those
-    small subproblem individually to come up with a solution.
+           else 
+                return
+          endif 
 
-    We can say that an array of single element is always sorted.Merge sort is based on this property only. We divide the whole array in smaller parts and sort them.
-    Then we merge this sorted arrays to recover back our original array
+Merge Sort is based on **Divide and Conquer**, which means we divide a problem to smaller subproblems and try to solve those  small subproblem individually to come up with a solution.</br>
 
-    ex:                                                                   3 5 4 1 2              UNSORTED ARRAY
+We can say that an array of single element is always sorted.Merge sort is based on this property only. We divide the whole array in smaller parts and sort them.Then we merge this sorted arrays to recover back our original array </br>
+ 
+                                                                                                                                                     
+                                                                          3 5 4 1 2              UNSORTED ARRAY
                                                                               |
                                                                           ----------
                                                                           |         |
