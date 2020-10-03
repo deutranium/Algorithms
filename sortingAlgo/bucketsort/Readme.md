@@ -1,3 +1,4 @@
+
 ﻿##  Bucket Sort
 Bucket Sort is a sorting technique that sorts the elements by first dividing the elements into several groups called **buckets**. The elements inside each **bucket** are sorted using any of the suitable sorting algorithms or recursively calling the same algorithm.
 
@@ -29,5 +30,29 @@ The complexity becomes even better if the elements inside the buckets are alread
 
 ###  Bucket Sort Applications:
 Bucket sort is used when
-1. nput is uniformly distributed over a range.
-2. -   there are floating point values.
+1. Input is uniformly distributed over a range.
+2. There are floating point values.
+
+###  Instruction for Running code:
+ - C
+
+     gcc BucketSort.c <br>
+     ./a.out
+
+ - Cpp
+   
+
+     g++ BucketSort.cpp<br>
+     ./a.out
+
+- Java
+	
+
+    javac BucketSort.java<br>
+    java BucketSort.class
+
+- Python
+
+    python3 BucketSort\.py
+
+  
