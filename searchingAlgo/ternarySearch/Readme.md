@@ -53,4 +53,25 @@ The steps involved in this algorithm are:
 -   This concept is used in unimodal functions to determine the maximum or minimum value of that function. Unimodal functions are functions that, have a single highest value.
 -   Can be used to search for where the derivative is zero in Newton's method as an optimization.
 
+###  Instruction for Running code:
+ - C
+     ```
+     gcc ternarySearch.c
+     ./a.out
+     ```
+ - Cpp
 
+     ````
+     g++ ternarySearch.cpp
+     ./a.out
+     ````
+- Java
+
+    ```
+    javac ternarySearch.java
+    java ternarySearch.class
+    ```
+- Python
+    ```
+    python3 ternarySearch.py
+    ```
