@@ -23,21 +23,21 @@
 	
 ###  Instruction for Running code:
  - C
-
-     gcc LinearSearch.c <br>
-     ./a.out
+	```
+	gcc LinearSearch.c
+	./a.out
+	```
 
  - Cpp
-   
-
-     g++ LinearSearch.cpp<br>
-     ./a.out
-
+	```
+	g++ LinearSearch.cpp
+	./a.out
+	```
 - JavaScript
-	
-
-    node LinearSearch.js
-
+	```
+	node LinearSearch.js
+	```
 - Python
-
-    python3 LinearSearch\.py
+	```
+	python3 LinearSearch.py
+	```
