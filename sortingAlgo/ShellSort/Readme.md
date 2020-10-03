@@ -19,7 +19,7 @@ Shell sort is an unstable sorting algorithm because this algorithm does not exam
 
 ### Space Complexity:
 The space complexity for shell sort is **O(1)**
-### ## Shell Sort Applications:
+### Shell Sort Applications:
 Shell sort is used when
 1. calling a stack is overhead.
 2. recursion exceeds a limit.
