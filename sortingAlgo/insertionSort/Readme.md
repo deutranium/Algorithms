@@ -35,7 +35,11 @@
 
   
 - Cpp
-  	g++ bubbleSort.cpp
+  	```
+	g++ bubbleSort.cpp
 	./a.out  
+	```
 - Python
+	```
 	python3 InsertionSort.py
+	```
