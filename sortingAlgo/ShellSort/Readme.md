@@ -11,7 +11,7 @@ In shell sort, elements at a specific interval are sorted. The interval between 
 ## Complexity
 Shell sort is an unstable sorting algorithm because this algorithm does not examine the elements lying in between the intervals.
 ### Time Complexities:
-* #### Worst Case Complexity: less than or equal to O($n^2$)
+* #### Worst Case Complexity: less than or equal to O(n<sup>2</sup>)
 * #### Best Case Complexities: O(n*log n)
 	When the array is already sorted, the total number of comparisons for each interval (or increment) is equal to the size of the array.
 * #### Average Case Complexity: O(n*log n)
