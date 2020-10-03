@@ -28,5 +28,6 @@ Shell sort is used when
 ###  Instruction for Running code:
 
 - Python
-
-    python3 ShellSort\.py
+    ```
+    python3 ShellSort.py
+    ```
