@@ -31,5 +31,6 @@
 ###  Instruction for Running code:
 
 - Python
-
+    ```	
     python3 optimisedSchoolMethod.py
+    ```
