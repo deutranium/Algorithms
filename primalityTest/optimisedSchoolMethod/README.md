@@ -28,3 +28,8 @@
             i ← i + 6
     
         return true
+###  Instruction for Running code:
+
+- Python
+
+    python3 optimisedSchoolMethod.py
