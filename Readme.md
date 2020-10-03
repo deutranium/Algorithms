@@ -66,7 +66,5 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### [Classic Alogorithms](ClassicalAlgos)
 - [Kosaraju's algorithm](ClassicalAlgos/Kosaraju'sAlgo)
-- [tries](ClassicalAlgos/tries)
-- [dijkstra algorithm](ClassicalAlgos/dijkstra's algo)
-
-
+- [Tries](ClassicalAlgos/tries)
+- [0/1 Knappsack](ClassicalAlgos/0-1KnappSack)
