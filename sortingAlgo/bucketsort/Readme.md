@@ -17,7 +17,7 @@ The process of bucket sort can be understood as **a scatter-gather** approach. T
 ## Complexity
 Shell sort is an unstable sorting algorithm because this algorithm does not examine the elements lying in between the intervals.
 ### Time Complexities:
-* #### Worst Case Complexity: O($n^2$)
+* #### Worst Case Complexity: O(n<sup>2</sup>)
 	When there are elements of close range in the array, they are likely to be placed in the same bucket. This may result in some buckets having more number of elements than others.  
 It makes the complexity depend on the sorting algorithm used to sort the elements of the bucket.  
 The complexity becomes even worse when the elements are in reverse order.
