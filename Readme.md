@@ -1,5 +1,5 @@
-[![Updated Badge](https://badges.pufler.dev/updated/deutranium/Algorithms)](https://badges.pufler.dev)
 [![Created Badge](https://badges.pufler.dev/created/deutranium/Algorithms)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/deutranium/Algorithms)](https://badges.pufler.dev)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![GitHub contributors](https://img.shields.io/github/contributors/deutranium/Algorithms.svg)](https://GitHub.com/deutranium/Algorithms/graphs/contributors/)
