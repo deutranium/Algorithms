@@ -48,11 +48,11 @@ Bucket sort is used when
 - Java
 	
     ```
-    javac BucketSort.java<br>
+    javac BucketSort.java
     java BucketSort.class
     ```
 - Python
     ```
-    python3 BucketSort\.py
+    python3 BucketSort.py
     ```
   
