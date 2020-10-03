@@ -1,42 +1,49 @@
-# Factor thatthe gap should shrink by after each iteration
-SHRINK_FACTOR = 10.0 / 13.0
+# Python program for implementation of CombSort 
+
+# To find next gap from current 
+def getNextGap(gap): 
+
+	# Shrink gap by Shrink factor 
+	gap = (gap * 10)/13
+	if gap < 1: 
+		return 1
+	return gap 
+
+# Function to sort arr[] using Comb Sort 
+def combSort(arr): 
+	n = len(arr) 
+
+	# Initialize gap 
+	gap = n 
+
+	# Initialize swapped as true to make sure that 
+	# loop runs 
+	swapped = True
+
+	# Keep running while gap is more than 1 and last 
+	# iteration caused a swap 
+	while gap !=1 or swapped == 1: 
+
+		# Find next gap 
+		gap = getNextGap(gap) 
+
+		# Initialize swapped as false so that we can 
+		# check if swap happened or not 
+		swapped = False
+
+		# Compare all elements with current gap 
+		for i in range(0, n-gap): 
+			if arr[i] > arr[i + gap]: 
+				arr[i], arr[i + gap]=arr[i + gap], arr[i] 
+				swapped = True
 
 
-def next_gap(currentGap):
-    """
-        Calculates the next value to be used as the gap
-    """
-    gap = int(currentGap * SHRINK_FACTOR)
-    if gap < 1:
-        return 1
-    else:
-        return gap
+# Driver code to test above 
+arr = [ 8, 4, 1, 3, -44, 23, -6, 28, 0] 
+combSort(arr) 
+
+print ("Sorted array:") 
+for i in range(len(arr)): 
+	print (arr[i]), 
 
 
-def comb_sort(arr):
-    """
-        Sorts given array [arr] of numbers using Comb Sort
-    """
-    arr_size = len(arr)
-    # Sets initial size of gap as the length of [arr]
-    gap = arr_size
-
-    # Keeps track of whether or not a swap occured during the most recent iteration of the sort
-    swapped = True
-
-    # Keeps trying to sort the array while
-    while gap != 1 or swapped:
-
-        # Keeps track of whether or not a swap took place in the current iteration
-        swapped = False
-
-        # Updates the value of gap for the new iteration
-        gap = next_gap(gap)
-
-        for index in range(0, arr_size - gap):
-            # Swaps the target indices if the left index is grester than the right index
-            if arr[index] > arr[index + gap]:
-                arr[index], arr[index + gap] = arr[index + gap], arr[index]
-                # Sets [swapped] to true when a swap is done
-                swapped = True
-    return arr
