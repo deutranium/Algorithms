@@ -26,3 +26,15 @@ Space Complexity is **O(2)** because the variable swapped adds to the space comp
 It is used in the following cases where
 1. the complexity of the code does not matter.
 2. a short code is preffered.
+
+###  Instruction for Running code:
+
+ - Cpp
+   
+
+     g++ bubbleSort.cpp<br>
+     ./a.out
+
+- Python
+
+    python3 bubbleSort\.py
