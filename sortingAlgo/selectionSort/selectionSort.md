@@ -11,5 +11,20 @@ selection sort(array)
 ```
 
 # Time Complexities:
-- Worst Case: O(n<sup>2</sup>)
+- Worst Case/Average: O(n<sup>2</sup>)
 - Best Case: O(n)
+Selection sort is inefficient on large lists.
+
+# Space Complexity:
+- O(1)
+Selection sort has a space complexity of O(1), making it efficient when memory is lacking.
+
+# Instructions for running Code:
+- cpp
+```
+ g++ selectionSort.cc
+ ./a.out
+ ```
+ - python
+ ```
+ python3 selectionSort.py
