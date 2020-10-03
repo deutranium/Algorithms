@@ -20,3 +20,24 @@
             if element = n 
               return i
         return -1
+	
+###  Instruction for Running code:
+ - C
+
+     gcc LinearSearch.c <br>
+     ./a.out
+
+ - Cpp
+   
+
+     g++ LinearSearch.cpp<br>
+     ./a.out
+
+- JavaScript
+	
+
+    node LinearSearch.js
+
+- Python
+
+    python3 LinearSearch\.py
