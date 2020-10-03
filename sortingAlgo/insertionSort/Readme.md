@@ -36,7 +36,7 @@
   
 - Cpp
   	```
-	g++ bubbleSort.cpp
+	g++ InsertionSort.cpp
 	./a.out  
 	```
 - Python
