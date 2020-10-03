@@ -30,11 +30,11 @@ It is used in the following cases where
 ###  Instruction for Running code:
 
  - Cpp
-   
-
+     ```   
      g++ bubbleSort.cpp<br>
      ./a.out
-
+     ```
 - Python
-
+    ```
     python3 bubbleSort\.py
+    ```
