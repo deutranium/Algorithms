@@ -34,7 +34,11 @@
 
   
 - Cpp
-  	g++ pigeonholeSort.cpp
-	./a.out  
+  	```
+	g++ pigeonholeSort.cpp  
+	./a.out
+	``` 
 - Python
+	```
 	python3 piegeonholeSort.py
+	```
