@@ -35,4 +35,6 @@
 
 - Python
 
-    python3 exponentialSearch.py
+```
+python3 exponentialSearch.py
+```
