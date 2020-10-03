@@ -24,3 +24,9 @@ Shell sort is used when
 1. calling a stack is overhead.
 2. recursion exceeds a limit.
 3. Insertion sort does not perform well when the close elements are far apart. Shell sort helps in reducing the distance between the close elements. Thus, there will be less number of swappings to be performed.
+
+###  Instruction for Running code:
+
+- Python
+
+    python3 ShellSort\.py
