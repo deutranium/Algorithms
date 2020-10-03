@@ -35,24 +35,24 @@ Bucket sort is used when
 
 ###  Instruction for Running code:
  - C
-
-     gcc BucketSort.c <br>
+     ```
+     gcc BucketSort.c
      ./a.out
-
+     ```
  - Cpp
    
-
-     g++ BucketSort.cpp<br>
+     ````
+     g++ BucketSort.cpp
      ./a.out
-
+     ````
 - Java
 	
-
+    ```
     javac BucketSort.java<br>
     java BucketSort.class
-
+    ```
 - Python
-
+    ```
     python3 BucketSort\.py
-
+    ```
   
