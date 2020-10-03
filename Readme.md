@@ -60,7 +60,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### [Primality Test](primalityTest)
 - [Optimised School Method](primalityTest/optimisedSchoolMethod) (Check factors till √n)
-- Fermat Method
+- Fermat Method(primalityTest/fermatMethod)
 - Miller-Rabin Method
 - [Solovay-Strassen Method](primalityTest/solovayStrassenMethod)
 
