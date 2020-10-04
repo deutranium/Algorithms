@@ -10,16 +10,16 @@ selection sort(array)
     swap array[k] and array[i]
 ```
 
-# Time Complexities:
+## Time Complexities:
 - Worst Case/Average: O(n<sup>2</sup>)
 - Best Case: O(n)
 Selection sort is inefficient on large lists.
 
-# Space Complexity:
+## Space Complexity:
 - O(1)
 Selection sort has a space complexity of O(1), making it efficient when memory is lacking.
 
-# Instructions for running Code:
+## Instructions for running Code:
 - cpp
 ```
  g++ selectionSort.cc
