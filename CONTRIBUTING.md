@@ -41,5 +41,5 @@ For example, for a searching algorithm, we can have the function as `someSearch(
 It is preferred to have at least one testcase within the code instead of getting the input, and its output being printed by calling the function like `print(funName(arr,x))` etc.
 
 ### Stylistic guidelines:
-- Ensure that the code is properly intended
-- Preferably have some (not oo many) comments to describe the logic
+- Ensure that the code is properly indented
+- Preferably have some (not too many) comments to describe the logic
