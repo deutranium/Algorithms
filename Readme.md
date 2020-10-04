@@ -52,7 +52,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Heap Sort](sortingAlgo/heapSort)
 - [Insertion Sort](sortingAlgo/insertionSort)
 - [Merge Sort](sortingAlgo/mergeSort)
-- Pigeonhole Sort
+- [Pigeonhole Sort](sortingAlgo/pigeonholeSort)
 - [Quick Sort](sortingAlgo/quickSort)
 - [Radix Sort](sortingAlgo/radixSort)
 - [Selection Sort](sortingAlgo/selectionSort)
