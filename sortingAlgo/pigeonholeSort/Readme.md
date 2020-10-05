@@ -42,3 +42,6 @@
 	```
 	python3 piegeonholeSort.py
 	```
+-javascript
+    ```
+	javascript pigeonholeSort.js
