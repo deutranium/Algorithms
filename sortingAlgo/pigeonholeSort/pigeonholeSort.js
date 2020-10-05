@@ -55,4 +55,7 @@ function SortPigeonhole(input){
   
   /* for input 1,3,2,7,4,6,11
    * output is 1 2 3 4 6 7 11
+   * time complexity
+   *-Worst-case Complexity:O(N+n)
+   *-Worst-case Space Complexity:O(N+n)
   */
