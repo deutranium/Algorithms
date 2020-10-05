@@ -61,7 +61,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 ### [Primality Test](primalityTest)
 - [Optimised School Method](primalityTest/optimisedSchoolMethod) (Check factors till √n)
 - [Fermat Method](primalityTest/fermatMethod)
-- Miller-Rabin Method
+- [Miller-Rabin Method](primalityTest/millerRabinMethod)
 - [Solovay-Strassen Method](primalityTest/solovayStrassenMethod)
 
 ### [Classic Alogorithms](ClassicalAlgos)
