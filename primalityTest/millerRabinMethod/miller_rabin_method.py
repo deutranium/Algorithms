@@ -24,10 +24,9 @@ def miller_rabin_method(number: int, rounds: int = 40) -> bool:
     # Factor out the powers of 2 from {number - 1} and save the result
     d = number - 1
     r = 0
-    while d % 2 == 0:
-        d /= 2
+    while not d & 1:
+        d = d >> 1
         r += 1
-    d = int(d)
 
     # Cycle at most {round} times
     for i in range(rounds + 1):

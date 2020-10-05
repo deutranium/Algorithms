@@ -6,11 +6,9 @@ class MillerRabinMethod {
     /**
      *
      * Generate a random BigInteger between {@code min} and {@code max}, inclusive.
-     * Random BigInteger implementation from
-     * <a href="https://stackoverflow.com/a/48855115/12771343">this StackOverflow
-     * answer</a> Uses an offset on the
-     * {@link #RandomInRangeFromZeroToPositive(BigInteger)} function to return a
-     * random BigInteger in a range.
+     * Random BigInteger implementation from <a href="https://stackoverflow.com/a/48855115/12771343">this StackOverflow answer</a>
+     * Uses an offset on the {@link #RandomInRangeFromZeroToPositive(BigInteger)}
+     * function to return a random BigInteger in a range.
      *
      * @param min lower bound
      * @param max upper bound
@@ -36,9 +34,8 @@ class MillerRabinMethod {
     /**
      *
      * Generate a random BigInteger smaller or equal to {@code max}. Random
-     * BigInteger implementation from
-     * <a href="https://stackoverflow.com/a/48855115/12771343">this StackOverflow
-     * answer</a> Returns a random BigInteger lower than {@code max} derived from a
+     * BigInteger implementation from <a href="https://stackoverflow.com/a/48855115/12771343">this StackOverflow* answer</a>
+     * Returns a random BigInteger lower than {@code max} derived from a
      * random byte array" />
      *
      * @param max upper bound
@@ -86,10 +83,11 @@ class MillerRabinMethod {
 
     /**
      *
-     * Miller-Rabin primality test Test if {@code number} could be prime using the
-     * Miller-Rabin Primality Test with {@code round} rounds. A return value of
-     * false means {@code number} is definitely composite, while true means it is
-     * probably prime. The higher {@code round} is, the more accurate the test is.
+     * Miller-Rabin primality test
+     * Test if {@code number} could be prime using the Miller-Rabin primality test
+     * with {@code round} rounds. A return value of false means {@code number} is
+     * definitely composite, while true means it is probably prime.
+     * The higher {@code round} is, the more accurate the test is.
      *
      * @param number the number to be tested for primality
      * @param rounds how many rounds to use in the test
@@ -106,8 +104,8 @@ class MillerRabinMethod {
         // Factor out the powers of 2 from {number - 1} and save the result
         BigInteger d = number.subtract(BigInteger.valueOf(1));
         int r = 0;
-        while (d.mod(BigInteger.valueOf(2)).equals(BigInteger.valueOf(0))) {
-            d = d.divide(BigInteger.valueOf(2));
+        while ((d.getLowestSetBit() & 1) == 0) {
+            d = d.shiftLeft(1);
             ++r;
         }
 

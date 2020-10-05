@@ -93,7 +93,7 @@ namespace Algorithms.primalityTest
         /// Miller-Rabin primality test
         /// </summary>
         /// <remarks>
-        /// Test if <paramref name="number"/> could be prime using the Miller-Rabin Primality Test with <paramref name="rounds"/> rounds.
+        /// Test if <paramref name="number"/> could be prime using the Miller-Rabin primality test with <paramref name="rounds"/> rounds.
         /// A return value of false means <paramref name="number"/> is definitely composite, while true means it is probably prime.
         /// The higher <paramref name="rounds"/> is, the more accurate the test is.
         /// </remarks>
@@ -111,9 +111,9 @@ namespace Algorithms.primalityTest
             // Factor out the powers of 2 from {number - 1} and save the result
             BigInteger d = number - 1;
             int r = 0;
-            while (d % 2 == 0)
+            while (d.IsEven)
             {
-                d /= 2;
+                d >>= 1;
                 ++r;
             }
 
@@ -138,24 +138,26 @@ namespace Algorithms.primalityTest
             }
             return true;
         }
-    }
 
-    public static class MillerRabinMethod
-    {
-        static void Main(string[] args)
+
+        public static class MillerRabinMethod
         {
-            int count = 0;
-            int upper_bound = 1000;
-            Console.WriteLine($"Prime numbers lower than {upper_bound}:");
-            for (int i = 1; i < upper_bound; ++i)
+            static void Main(string[] args)
             {
-                if (PrimalityTest.MillerRabin(i))
+                int count = 0;
+                int upper_bound = 1000;
+                Console.WriteLine($"Prime numbers lower than {upper_bound}:");
+                for (int i = 1; i < upper_bound; ++i)
                 {
-                    Console.WriteLine($"\t{i}");
-                    ++count;
+                    if (PrimalityTest.MillerRabin(i))
+                    {
+                        Console.WriteLine($"\t{i}");
+                        ++count;
+                    }
                 }
+                Console.WriteLine($"Total: {count}");
             }
-            Console.WriteLine($"Total: {count}");
         }
     }
+
 }
