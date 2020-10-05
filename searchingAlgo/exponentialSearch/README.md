@@ -58,3 +58,19 @@ For Linux/ Mac
 g++ exponentialSearch.cpp -o exponentialSearch.out
 ./exponentialSearch.out
 ```
+
+- C
+
+For Windows
+
+```
+gcc exponentialSearch.c -o exponentialSearch.exe
+exponentialSearch.exe
+```
+
+For Linux/Mac
+
+```
+gcc exponentialSearch.c -o exponentialSearch.out
+./exponentialSearch.out
+```
