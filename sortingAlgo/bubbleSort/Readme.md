@@ -38,3 +38,8 @@ It is used in the following cases where
     ```
     python3 bubbleSort\.py
     ```
+- C
+	```
+	gcc bubbleSort.c
+	./a.out
+	```
