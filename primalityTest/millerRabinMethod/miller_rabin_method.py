@@ -1,7 +1,7 @@
 import random
 
 
-def miller_rabin(number: int, rounds: int) -> bool:
+def miller_rabin_method(number: int, rounds: int = 40) -> bool:
     """Miller-Rabin primality test
 
     Test if number could be prime using the Miller-Rabin Primality Test with rounds rounds.
@@ -17,6 +17,8 @@ def miller_rabin(number: int, rounds: int) -> bool:
     if number == 1:
         return False
     if number == 2:
+        return True
+    if number == 3:
         return True
 
     # Factor out the powers of 2 from {number - 1} and save the result
@@ -42,3 +44,14 @@ def miller_rabin(number: int, rounds: int) -> bool:
             continue
         return False
     return True
+
+
+if __name__ == "__main__":
+    count = 0
+    upper_bound = 1000
+    print(f"Prime numbers lower than {upper_bound}:")
+    for i in range(1, 1000):
+        if miller_rabin_method(i):
+            print(f"\t{i}")
+            count += 1
+    print(f"Total: {count}")
