@@ -1,5 +1,15 @@
 # Contribution Guidelines
 
+## Steps to contribute
+
+- Check the code along with the issues and PR section if someone else has already worked on or is working on the algo and language you're interested in. If true, either implement it in a different language, or choose a different algo
+
+- Create (if not already created) an issue specifying the **algorithm name** and the **language** you want to implement it in. If the issue has been created by someone else, comment the language you will be working with for the concerned algo.
+
+- **Fork the repo, write the required code, commit using descriptive messages, push to your fork**
+
+- Make a PR with the title containing algorithm name and the language.
+
 ### Naming Conventions:
 It is preferred to use [camel case](https://en.wikipedia.org/wiki/Camel_case) in the naming of directories, files, variables, function names etc.
 
@@ -31,5 +41,5 @@ For example, for a searching algorithm, we can have the function as `someSearch(
 It is preferred to have at least one testcase within the code instead of getting the input, and its output being printed by calling the function like `print(funName(arr,x))` etc.
 
 ### Stylistic guidelines:
-- Ensure that the code is properly intended
-- Preferably have some (not oo many) comments to describe the logic
+- Ensure that the code is properly indented
+- Preferably have some (not too many) comments to describe the logic
