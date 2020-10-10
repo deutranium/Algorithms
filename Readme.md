@@ -68,3 +68,4 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Kosaraju's algorithm](ClassicalAlgos/Kosaraju'sAlgo)
 - [Tries](ClassicalAlgos/tries)
 - [0/1 Knappsack](ClassicalAlgos/0-1KnappSack)
+- [Prim's Algorithm](ClassicalAlgos/primsAlgoMST)
