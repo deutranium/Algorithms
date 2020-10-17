@@ -1,18 +1,37 @@
-#TC
-arr = [10, 7, 8, 1, 4, 2, 5]
+'''COUNTINGSORT
+Counting sort is a sorting technique based on keys between a specific range.
+It works by counting the number of objects having distinct key values.
+Then doing some arithmetic to calculate the position of each object in the
+output sequence.''' 
 
-def countingSort(arr, key=(lambda x:x), k=-1):
-    if k==-1:
-        k=max(arr)
-        
-    table = [[] for _ in range(k+3)]
 
-    for n in arr:
-        table[key(n)].append(n)
+def countSort(arr):
+   output = [0 for i in range(256)]                                   
+   count = [0 for i in range(256)]                    # Create a count array initialized with 0
+   ans = ["" for _ in arr]                            # as strings are immutable
 
-    arr = []
-    for i in table:
-        arr.extend(i)
-    return arr
+   for i in arr:
+      count[ord(i)] += 1                              # position of character in the output array
 
-print(countingSort(arr, 15))
+      
+   for i in range(256):
+      count[i] += count[i-1]                          # output character array
+
+  
+   for i in range(len(arr)):
+      output[count[ord(arr[i])]-1] = arr[i]
+      count[ord(arr[i])] -= 1                         # array of sorted charcters
+
+   
+   for i in range(len(arr)):
+      ans[i] = output[i]
+   return ans
+
+
+
+#TEST
+arr = "Algorithms"
+ans = countSort(arr)
+print ("Sorted character array is "+str("".join(ans)))
+
+
