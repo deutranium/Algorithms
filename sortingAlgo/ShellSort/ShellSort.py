@@ -1,30 +1,26 @@
-def shellSort(arr): 
-    n = len(arr) 
-    gap = n/2
-  
-    while gap > 0: 
-  
-        for i in range(gap,n): 
-            temp = arr[i] 
-            j = i 
-            while  j >= gap and arr[j-gap] >temp: 
-                arr[j] = arr[j-gap] 
-                j -= gap 
-  
-            arr[j] = temp 
-        gap /= 2
-  
-  
-# Driver code to test above 
-arr = [ 12, 34, 54, 2, 3] 
-  
-n = len(arr) 
-print ("Array before sorting:") 
-for i in range(n): 
-    print(arr[i]), 
-  
-shellSort(arr) 
-  
-print ("\nArray after sorting:") 
-for i in range(n): 
-    print(arr[i]), 
+'''Shell sort is an algorithm that first sorts the elements far apart
+from each other and successively reduces the interval between the elements
+to be sorted. It is a generalized version of insertion sort.'''
+
+
+
+def shellSort(array, n):
+    interval = n // 2                  # Rearrange elements at each n/2, n/4, n/8, ... intervals
+    while interval > 0:
+        for i in range(interval, n):
+            temp = array[i]
+            j = i
+            while j >= interval and array[j - interval] > temp:
+                array[j] = array[j - interval]
+                j -= interval
+
+            array[j] = temp
+        interval //= 2
+
+#TEST CODE
+        
+data = [9, 8, 3, 7, 5, 6, 4, 1]
+size = len(data)
+shellSort(data, size)
+print('Sorted Array in Ascending Order:')
+print(data)
