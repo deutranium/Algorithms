@@ -1,27 +1,28 @@
+
 import java.io.*; 
 import java.util.*; 
 class Graph 
 { 
 	private int V; 
 	private LinkedList<Integer> adj[];
-	Graph(int v) 
+	Graph(int v) // create the graph
 	{ 
 		V = v; 
 		adj = new LinkedList[v]; 
 		for (int i=0; i<v; ++i) 
 			adj[i] = new LinkedList(); 
 	} 
-	void addEdge(int v,int w) 
+	void addEdge(int v,int w) // add edges
 	{ 
 		adj[v].add(w); 
 	} 
-	void BFS(int s) 
+	void BFS(int s) // algorithm
 	{ 
 		boolean visited[] = new boolean[V]; 
 		LinkedList<Integer> queue = new LinkedList<Integer>(); 
 		visited[s]=true; 
 		queue.add(s); 
-		while (queue.size() != 0) 
+		while (queue.size()> 0) 
 		{ 
 			s = queue.poll(); 
 			System.out.print(s+" ");
@@ -40,6 +41,7 @@ class Graph
 
     public static void main(String args[]) 
 	{ 
+        // sample to run the algorithm
 		Graph g = new Graph(4); 
 
 		g.addEdge(0, 1); 
