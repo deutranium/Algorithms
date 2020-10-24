@@ -43,3 +43,8 @@ It is used in the following cases where
 	gcc bubbleSort.c
 	./a.out
 	```
+- Java
+  	```
+  	javac bubbleSort.java
+  	java bubbleSort
+  	```
