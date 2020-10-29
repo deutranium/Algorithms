@@ -70,3 +70,4 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [0/1 Knappsack](ClassicalAlgos/0-1KnappSack)
 - [Prim's Algorithm](ClassicalAlgos/primsAlgoMST)
 - [Sieve Of Eratosthenes](ClassicalAlgos/sieveOfEratosthenes)
+- [Lowest Common Ancestor](ClassicalAlgos/lowestCommonAncestor_BinaryTrees)
