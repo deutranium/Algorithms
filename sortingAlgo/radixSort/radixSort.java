@@ -11,6 +11,9 @@ public class radixSort {
     public static int[] radixSort(int[] input) {
         final int RADIX = 10;
         List<Integer>[] bucket = new ArrayList[RADIX];
+        // Do counting sort for every digit. Note that 
+        // instead of passing digit number, exp is passed. 
+        // exp is 10^i where i is current digit number 
         for (int i = 0; i < bucket.length; i++) {
             bucket[i] = new ArrayList<Integer>(); 
         }
