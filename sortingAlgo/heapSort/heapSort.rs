@@ -11,7 +11,7 @@ where
     fn new() -> Self {
         Heap {
             array: [T::default(); 32],
-            is_minheap: true,
+            is_minheap: false,
             size: 0,
         }
     }
@@ -84,7 +84,7 @@ fn build<T: PartialOrd + Copy + Default>(array: [T; 32], n: usize) -> Heap<T> {
 fn heapsort<T: PartialOrd + Copy + Default>(array: [T; 32], n: usize) -> [T; 32] {
     let mut heap = build(array, n);
     let mut arr: [T; 32] = [T::default(); 32];
-    for i in 0..n {
+    for i in (0..n).rev() {
         arr[i] = heap.extract();
     }
 
