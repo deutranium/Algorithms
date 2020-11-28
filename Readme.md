@@ -46,7 +46,8 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### [Sorting Algorithms](sortingAlgo)
 - [Bucket Sort](sortingAlgo/bucketsort)
-- Comb Sort
+- [Bubble Sort](sortingAlgo/bubbleSort)
+- [Comb Sort](sortingAlgo/combSort)
 - [Counting Sort](sortingAlgo/countingSort)
 - [Cycle Sort](sortingAlgo/cycleSort)
 - [Heap Sort](sortingAlgo/heapSort)
