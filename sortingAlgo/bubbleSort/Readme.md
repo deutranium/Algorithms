@@ -48,3 +48,7 @@ It is used in the following cases where
   	javac bubbleSort.java
   	java bubbleSort
   	```
+- JavaScript
+	```
+	node bubbleSort.js
+	```
