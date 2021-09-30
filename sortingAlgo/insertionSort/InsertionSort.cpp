@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main()
 {
@@ -27,7 +29,7 @@ int main()
     printf("Sorted list in ascending order:\n");
     for (c = 0; c < n; c++)
     {
-        printf("%d\n", array[c]);
+        cout << array[c] << endl;
     }
     return 0;
 }
