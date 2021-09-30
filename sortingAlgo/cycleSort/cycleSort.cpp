@@ -39,8 +39,12 @@ void cycleSort(int *arr,int n)
 }
 int main()
 {
-    int arr = {20,30,10,20,70};
+    int arr[] = {20,30,10,20,70};
     int n = 5;
     cycleSort(arr,n);
+    for (int i = 0; i < n; i++){
+        cout << arr[i] << ' ';
+    }
+    cout << endl;
 }
 
