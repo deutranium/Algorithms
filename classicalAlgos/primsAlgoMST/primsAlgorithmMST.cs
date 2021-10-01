@@ -58,3 +58,4 @@ class MST {
                                       { 0, 5, 7, 9, 0 } };
         primMST(graph);
     }
+}
