@@ -47,6 +47,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 ### [Sorting Algorithms](sortingAlgo)
 - [Bucket Sort](sortingAlgo/bucketsort)
 - [Bubble Sort](sortingAlgo/bubbleSort)
+- [Cocktail Sort](sortingAlgo/cocktailSort)
 - [Comb Sort](sortingAlgo/combSort)
 - [Counting Sort](sortingAlgo/countingSort)
 - [Cycle Sort](sortingAlgo/cycleSort)
