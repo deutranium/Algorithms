@@ -20,13 +20,13 @@
  */
 void radix(std::vector<int> &v) {    
     // the number of digits of max element indicates how many times the main loop will be executed 
-    int max_d = std::to_string(*std::max_element(v.begin(), v.end())).size(); 
+    int maxDig = std::to_string(*std::max_element(v.begin(), v.end())).size(); 
 
     // one bucket for each digit from 0 to 9
     std::array<std::vector<int>, 10> buckets;
 
-    // main loop; max_d times
-    for(int i = 0; i < max_d; i++) {
+    // main loop; maxDig times
+    for(int i = 0; i < maxDig; i++) {
         // inter loop; insert each element into its respective bucket depending on which digit position is being analyzed
         std::for_each(v.begin(), v.end(), [&buckets, i](int value){ buckets[(int)(value/std::pow(10, i))%10].push_back(value); });
         
@@ -52,7 +52,7 @@ void radix(std::vector<int> &v) {
 /*!
  * Simple print function.
  */
-void print_v(std::vector<int> v) {  
+void printV(std::vector<int> v) {  
     for(int i = 0; i < v.size(); i++) std::cout << v[i] << " "; 
     std::cout << std::endl; 
 } 
@@ -61,12 +61,12 @@ void print_v(std::vector<int> v) {
  * This function separates the main vector into two: one containing negative integers and one containing non-negative integers.
  *
  * @param v Vector with non-negative integers.
- * @param neg_v Vector with negative integers.
+ * @param negV Vector with negative integers.
  */
-void split_v(std::vector<int> &v, std::vector<int> &neg_v) {
+void splitV(std::vector<int> &v, std::vector<int> &negV) {
     for(int i = 0; i < v.size(); i++) {
         if(v[i] < 0) {
-            neg_v.push_back(v[i]);
+            negV.push_back(v[i]);
             v.erase(v.begin() + i);
         }
     }
@@ -77,42 +77,42 @@ void split_v(std::vector<int> &v, std::vector<int> &neg_v) {
  *
  * @param v Vector whose elements will be changed.
  */
-void neg_pos(std::vector<int> &v) {
+void negPos(std::vector<int> &v) {
     for(auto &a : v) {
         a *= -1;
     }
 }
 
 /*!
- * This function joins two vectors.
+ * This function joinVs two vectors.
  * 
  * @param v Vector with non-negative integers.
- * @param neg_v Vector with negative integers.
+ * @param negV Vector with negative integers.
  */
-void join(std::vector<int> &v, std::vector<int> &neg_v) {
+void joinV(std::vector<int> &v, std::vector<int> &negV) {
     // reverses because the original values are negative
-    std::reverse(neg_v.begin(), neg_v.end()); 
-    for(auto &a : neg_v) v.insert(v.begin(), a);
+    std::reverse(negV.begin(), negV.end()); 
+    for(auto &a : negV) v.insert(v.begin(), a);
 }
 
 
 int main() {  
     std::vector<int> v = {23, -10, 20, -11, 12, -6, 7};  
-    std::vector<int> neg_v;
+    std::vector<int> negV;
     
-    split_v(v, neg_v);
+    splitV(v, negV);
 
-    neg_pos(neg_v);
+    negPos(negV);
   
     radix(v);
-    radix(neg_v);  
+    radix(negV);  
 
-    neg_pos(neg_v);
+    negPos(negV);
 
-    join(v, neg_v);
+    joinV(v, negV);
   
     std::cout << "Sorted: ";
-    print_v(v); 
+    printV(v); 
     
     return 0;  
 }  
