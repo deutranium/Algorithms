@@ -7,7 +7,7 @@ source : https://en.wikipedia.org/wiki/Heapsort
 #include <stdlib.h>
 
 /* Creates a max-heap */
-void maxheapify(int a[], int pos, int n){
+void maxHeapify(int a[], int pos, int n){
     int maxpos = pos, temp;
     
     int l_child = 2 * pos + 1;
@@ -27,12 +27,12 @@ void maxheapify(int a[], int pos, int n){
     }
 }
 
-void heapsort(int a[], int n){
+void heapSort(int a[], int n){
     int i, temp;
     
     /* build_heap */
     for(i = n/2 - 1; i >= 0; i--){
-        maxheapify(a, i, n);
+        maxHeapify(a, i, n);
     }
     
     /* In every iteration of the loop below, we will move the element at the beginning of the array to the end as the element at the beginning of the array is max element after maxheapify fn */
@@ -49,7 +49,7 @@ void heapsort(int a[], int n){
         printf("\n");
         
         /* re-establishes heap property */
-        maxheapify(a, 0, i);
+        maxHeapify(a, 0, i);
     }
 }
 
@@ -72,7 +72,7 @@ int main(){
         scanf("%d", &a[i]);
     }
 
-    heapsort(a, n);
+    heapSort(a, n);
     
     printf("Sorted Array: ");
     for(j = 0; j < n; j++)    printf("%d ", a[j]);
@@ -82,7 +82,8 @@ int main(){
 }
 
 /*
-Time complexity : nlogn (best, worst and average are all same)
+Time Complexity : nlogn (best, worst and average are all same)
+Space Complexity : O(1) => constant 
 In place Sort : Yes
 Stable Sort : No
 */
