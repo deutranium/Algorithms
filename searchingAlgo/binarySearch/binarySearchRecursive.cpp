@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
- // recursive binary search for sorted array
+ // recursive binary search for a sorted array
  bool binse(int arr[],int l,int h,int x)
  {
      if(l>h)
