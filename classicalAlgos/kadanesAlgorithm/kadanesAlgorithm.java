@@ -38,16 +38,15 @@ public class Main
         return max;
     }
 	public static void main(String[] args) {    // main function
-		Main obj=new Main();
+	Main obj=new Main();
         int n;  // n: size of array
         Scanner sc=new Scanner(System.in);  
         System.out.print("Enter array size: ");  
         n=sc.nextInt();  
         int[] array = new int[n];  // array: input array
         System.out.println("Enter array elements: ");  
-        for(int i=0; i<n; i++)  
-        {  
-        array[i]=sc.nextInt();  // input array elements
+        for(int i=0; i<n; i++) { 
+        	array[i]=sc.nextInt();  // input array elements
         }
         System.out.println("Maximum sum of subarray: "+obj.kadanesAlgorithm(array,n)); // output
 	}
