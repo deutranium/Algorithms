@@ -1,3 +1,4 @@
+// a function that merges two arrys
 func merge(_ array_1: inout [Int], _ low: Int, _ mid: Int, _ high: Int) {
     var i = low
     var j = mid + 1
@@ -35,6 +36,7 @@ func merge(_ array_1: inout [Int], _ low: Int, _ mid: Int, _ high: Int) {
     }
 }
 
+// the recursive sorting algorithm that divides the array, sorts the two halves and merges them
 func sort(_ array: inout [Int], _ low: Int, _ high: Int) {
     if low < high {
         let mid = (low + high) / 2
