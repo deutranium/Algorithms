@@ -13,6 +13,9 @@
 ### Naming Conventions:
 It is preferred to use [camel case](https://en.wikipedia.org/wiki/Camel_case) in the naming of directories, files, variables, function names etc.
 
+In case you have a modified version of the algorithm, you can use `_` as a separator to create this distinction. \
+(For example, [`radixSort_withNegatives.cpp`](sortingAlgo/radixSort/radixSort_withNegatives.cpp), [`palindrome_WithIterators.cpp`](classicalAlgos/checkPalindrome/palindrome_WithIterators.cpp), etc). Otherwise, stick to camel case.
+
 
 ## Directory and file structure
 
