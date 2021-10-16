@@ -15,7 +15,6 @@ int maxSumarray(int a[], int size){
     return max_sum_so_far;
 }
 
-
 int main(){
 	int i,size;
 	
