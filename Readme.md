@@ -62,7 +62,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Quick Sort](sortingAlgo/quickSort)
 - [Radix Sort](sortingAlgo/radixSort)
 - [Selection Sort](sortingAlgo/selectionSort)
-- [Shell Sort](sortingAlgo/ShellSort)
+- [Shell Sort](sortingAlgo/shellSort)
 - [Tim Sort](sortingAlgo/timSort)
 
 ### [Primality Test](primalityTest)
