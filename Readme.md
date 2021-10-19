@@ -85,5 +85,6 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 
 ### [Graph Coloring Algorithms](graphColoringAlgo)
 - [Greedy Graph Coloring Algorithm](graphColoringAlgo/greedyGraphColoring)
+- [Welsh Powell Algorithm](graphColoringAlgo/welshPowellAlgo)
 
 
