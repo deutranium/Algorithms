@@ -37,7 +37,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 ### [Searching Algorithms](searchingAlgo)
 - [Binary Search](searchingAlgo/binarySearch)
 - [Breadth First Search](searchingAlgo/breadthFirstSearch)
-- [Depth First Search](searchingAlgo/DepthFirstSearch)
+- [Depth First Search](searchingAlgo/depthFirstSearch)
 - [Exponential Search](searchingAlgo/exponentialSearch)
 - [Fibonacci Search](searchingAlgo/fibonacciSearch)
 - [Interpolation Search](searchingAlgo/interpolationSearch)
