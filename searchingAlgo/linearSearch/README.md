@@ -41,3 +41,8 @@
 	```
 	python3 LinearSearch.py
 	```
+- Rust
+	```
+	rustc linear_search.rs
+	./linear_search.exe
+	```
