@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main()
+void sieveOfEratosthenes(int number)
 {
-    int number = 100, i, j;
+
+    int i, j;
     int primes[number + 1];
 
     for (i = 2; i <= number; i++) //populating array with naturals numbers
@@ -34,6 +35,18 @@ int main()
             result[k++] = primes[i];
         }
     }
+
+    for (i = 0; i < k; i++)
+        printf("%d ", result[i]);
+
+    printf("\n");
+}
+
+int main()
+{
+    int number = 100;
+
+    sieveOfEratosthenes(number);
 
     return 0;
 }
