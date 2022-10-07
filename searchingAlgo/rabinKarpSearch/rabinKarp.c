@@ -1,11 +1,11 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<string.h>
  
 
-int rabinKarp(string txt, string pat, int q) 
+int rabinKarp(char txt[], char pat[], int q) 
 { 
-	int txt_len = txt.length();
-	int pat_len = pat.length();
+	int txt_len = strlen(txt);
+	int pat_len = strlen(pat);
     int d = 256;
 	int p=0,t=0,h=1;
 	
@@ -42,12 +42,12 @@ int rabinKarp(string txt, string pat, int q)
 
 int main()
 {
-    string text = "AABBACHADA";
-    string pat = "BBAC";
+    char text[] = "AABBACHADA";
+    char pat[] = "BBAC";
     int index =  rabinKarp(text,pat,101);
     if(index != -1)
-        cout<<"Pattern found at: "<<index+1;
+        printf("Pattern found at: %d\n", index+1);
     else
-        cout<<"Pattern not found";
+        printf("Pattern not found\n");
     
 }
