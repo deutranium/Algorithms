@@ -1,3 +1,9 @@
+--[[
+    This can be run in vanilla Lua!
+
+    $ lua ./binarySearch.lua
+]]
+
 --- search an element in array with binary search
 --- @param arr table list of integer
 --- @param x number int we want to search
