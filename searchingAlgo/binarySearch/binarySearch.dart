@@ -39,5 +39,5 @@ void main(List<String> args) {
   print(binarySearch(arr, x, 0, arr.length));
 
   /// expect return equal to 0
-  print(binarySearch(arr, x1, 0, arr.length));
+  print(binarySearch(arr2, x1, 0, arr.length));
 }
