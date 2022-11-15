@@ -1,3 +1,6 @@
+--- Sort an array using the bubble sort algorithm.
+--- @param t table
+--- @return table
 local function bubbleSort(t)
     local n = #t
     for i = 1, n do
@@ -9,6 +12,10 @@ local function bubbleSort(t)
     end
 end
 
+--[[
 local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
 bubbleSort(t)
 print(table.concat(t, ", "))
+]]
+
+return bubbleSort

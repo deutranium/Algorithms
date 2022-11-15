@@ -1,3 +1,6 @@
+--- Sort an array using the cocktail sort algorithm.
+--- @param t table
+--- @return table
 local function cocktailSort(t)
     local n = #t
     local swapped = true
@@ -24,8 +27,7 @@ local function cocktailSort(t)
         end
         start = start + 1
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-cocktailSort(t)
-print(table.concat(t, ", "))
+return cocktailSort

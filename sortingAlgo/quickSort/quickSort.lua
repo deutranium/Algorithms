@@ -1,3 +1,6 @@
+--- Sort an array using the quick sort algorithm.
+--- @param t table
+--- @return table
 local function quickSort(t)
     local n = #t
     local function sort(t, start, end_)
@@ -17,8 +20,7 @@ local function quickSort(t)
         end
     end
     sort(t, 1, n)
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-quickSort(t)
-print(table.concat(t, ", "))
+return quickSort

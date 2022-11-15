@@ -1,3 +1,6 @@
+--- Sort an array using cycle sort algorithm.
+--- @param t table
+--- @return table
 local function cycleSort(t)
     local n = #t
     for i = 1, n do
@@ -29,8 +32,7 @@ local function cycleSort(t)
             t[pos], item = item, t[pos]
         end
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-cycleSort(t)
-print(table.concat(t, ", "))
+return cycleSort

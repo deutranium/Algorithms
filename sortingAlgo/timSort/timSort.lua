@@ -1,3 +1,6 @@
+--- Sort an array using the tim sort algorithm.
+--- @param t table
+--- @return table
 local function timSort(t)
     local n = #t
     local minRun = 32
@@ -76,6 +79,4 @@ local function timSort(t)
     return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-timSort(t)
-print(table.concat(t, ", "))
+return timSort

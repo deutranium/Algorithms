@@ -1,3 +1,6 @@
+--- Sort an array using the insertion sort algorithm.
+--- @param t table
+--- @return table
 local function insertionSort(t)
     local n = #t
     for i = 2, n do
@@ -9,8 +12,7 @@ local function insertionSort(t)
         end
         t[j + 1] = item
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-insertionSort(t)
-print(table.concat(t, ", "))
+return insertionSort

@@ -1,3 +1,6 @@
+--- Sort an array using the radix sort algorithm.
+--- @param t table
+--- @return table
 local function radixSort(t)
     local n = #t
     local max = 0
@@ -27,8 +30,7 @@ local function radixSort(t)
         end
         exp = exp * 10
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-radixSort(t)
-print(table.concat(t, ", "))
+return radixSort

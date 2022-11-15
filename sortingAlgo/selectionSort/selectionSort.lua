@@ -1,3 +1,6 @@
+--- Sort an array using the selection sort algorithm.
+--- @param t table
+--- @return table
 local function selectionSort(t)
     local n = #t
     for i = 1, n - 1 do
@@ -9,8 +12,7 @@ local function selectionSort(t)
         end
         t[i], t[min] = t[min], t[i]
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-selectionSort(t)
-print(table.concat(t, ", "))
+return selectionSort

@@ -1,3 +1,6 @@
+--- Sort an array using the merge sort algorithm.
+--- @param t table
+--- @return table
 local function mergeSort(t)
     local n = #t
     if n < 2 then
@@ -40,6 +43,4 @@ local function mergeSort(t)
     return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-mergeSort(t)
-print(table.concat(t, ", "))
+return mergeSort

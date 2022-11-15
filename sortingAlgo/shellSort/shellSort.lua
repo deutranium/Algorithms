@@ -1,3 +1,6 @@
+--- Sort an array using the shell sort algorithm.
+--- @param t table
+--- @return table
 local function shellSort(t)
     local n = #t
     local gap = math.floor(n / 2)
@@ -13,8 +16,7 @@ local function shellSort(t)
         end
         gap = math.floor(gap / 2)
     end
+    return t
 end
 
-local t = { 3, 2, 1, 4, 5, 6, 7, 8, 9, 10 }
-shellSort(t)
-print(table.concat(t, ", "))
+return shellSort
