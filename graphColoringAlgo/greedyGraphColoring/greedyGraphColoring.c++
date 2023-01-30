@@ -1,4 +1,33 @@
+/*
+	 							Greedy Graph Coloring Algorithm
+								
+
+The greedy approach to solving the graph coloring problem can be using at most x+1 colors if the maximum degree of a vertex is x.
+The greedy approach does not guarantee that the minimum number of colors are used but, 
+surely, the maximum x+1 colors are used where x is the maximum degree of any vertex in the given graph.
+
+We will color the current vertex with the least-numbered color. 
+After that, we will check if the currently assigned least color has been used previously for any adjacent vertex of the current vertex or not.
+If it is not used then we can continue the process to the next vertex else, we will assign the next color.
+
+
+Let us see the pseudo-code for the same.
+
+Pseudo code can be:
+1. Color the first vertex of the graph with the first color.
+2. Repeat the below step for the remaining vertices. 
+	2.1.Color the current vertex with the minimum numbered color. 
+	2.2.Make sure that the selected minimum number color has not been used previously for any adjacent vertex of the current vertex.
+
+
+Time Complexity: O(V^2 + E) worst case
+Space Complexity: O(1) as no extra space is used
+*/
+
+
 // A C++ program to implement greedy graph coloring algorithm
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
