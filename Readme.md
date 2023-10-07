@@ -88,3 +88,7 @@ Basically these are supposed to be my notes, but feel free to use them as you wi
 - [Welsh Powell Algorithm](graphColoringAlgo/welshPowellAlgo)
 
 
+### [Shortest Path Algorithms](ShortestPathAlgos)
+- [Dijkstra's Algorithm](ShortestPathAlgos/Dijkstra_Algo.cpp)
+
+
