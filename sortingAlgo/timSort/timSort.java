@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class TimSort  { 
+public class timSort  { 
 
     public static int RUN = 32; 
 

@@ -3,7 +3,7 @@
 // Space complexity: O(1)
 
 import java.util.*;     // Importing util package for getting user input(Scanner class)
-public class Main
+public class kadanesAlgorithm
 {
     int kadanesAlgorithm(int arr[], int n){
         int count=0;    // count of negative elements
@@ -38,7 +38,7 @@ public class Main
         return max;
     }
 	public static void main(String[] args) {    // main function
-	Main obj=new Main();
+    kadanesAlgorithm obj=new kadanesAlgorithm();
         int n;  // n: size of array
         Scanner sc=new Scanner(System.in);  
         System.out.print("Enter array size: ");  

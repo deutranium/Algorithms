@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ShellSort { 
+public class shellSort { 
     public static int[] shellSort(int arr[]) { 
         int n = arr.length; 
         // Start with a big gap, then reduce the gap 
