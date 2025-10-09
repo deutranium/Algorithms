@@ -61,19 +61,23 @@ class MinSpanTree {
         printMST(parent, graph);
     }
  
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         MinSpanTree t = new MinSpanTree();
-        int graph[][] = new int[rows][columns];
-        for(int i=0; i<rows;i++)
-         {            
-            for(int j=0; j<columns;j++)
-            {
-                graph[i][j]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+    
+        System.out.print("Enter the number of vertices in the graph: ");
+        int V = sc.nextInt();
+    
+        int[][] graph = new int[V][V];
+    
+        System.out.println("Enter the adjacency matrix (space separated, row by row):");
+        for (int i = 0; i < V; i++) {
+            for (int j = 0; j < V; j++) {
+                graph[i][j] = sc.nextInt();
             }
-         }
- 
-        // Print the solution
+        }
+    
         t.prim_MST(graph);
+        sc.close();
     }
 }

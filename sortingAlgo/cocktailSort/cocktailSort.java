@@ -1,4 +1,4 @@
-public class cocktail{
+public class cocktailSort{
    static int temp;
    static void Cocktail(int a[], int n){
       boolean swap = true;
