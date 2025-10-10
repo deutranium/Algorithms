@@ -3,14 +3,14 @@ import java.io.*;
 import java.util.*; 
 
 
-public class Graph{ 
+public class tarjansAlgo{ 
 private int V;  
   
  
 private LinkedList<Integer> adj[];  
 private int Time; 
 
-Graph(int v) 
+tarjansAlgo(int v) 
 { 
 	V = v; 
 	adj = new LinkedList[v]; 
@@ -108,7 +108,7 @@ public static void main(String args[])
 { 
 	
 	
-	Graph g1 = new Graph(5); 
+	tarjansAlgo g1 = new tarjansAlgo(5); 
 
 	g1.addEdge(1, 0); 
 	g1.addEdge(0, 2); 
@@ -118,14 +118,14 @@ public static void main(String args[])
 	System.out.println("SSC in first graph "); 
 	g1.SCC(); 
 
-	Graph g2 = new Graph(4); 
+	tarjansAlgo g2 = new tarjansAlgo(4); 
 	g2.addEdge(0, 1); 
 	g2.addEdge(1, 2); 
 	g2.addEdge(2, 3); 
 	System.out.println("\nSSC in second graph "); 
 	g2.SCC(); 
 	
-	Graph g3 = new Graph(7); 
+	tarjansAlgo g3 = new tarjansAlgo(7); 
 	g3.addEdge(0, 1); 
 	g3.addEdge(1, 2); 
 	g3.addEdge(2, 0); 
@@ -137,7 +137,7 @@ public static void main(String args[])
 	System.out.println("\nSSC in third graph "); 
 	g3.SCC(); 
 	
-	Graph g4 = new Graph(11); 
+	tarjansAlgo g4 = new tarjansAlgo(11); 
 	g4.addEdge(0, 1); 
 	g4.addEdge(0, 3); 
 	g4.addEdge(1, 2); 
@@ -158,7 +158,7 @@ public static void main(String args[])
 	System.out.println("\nSSC in fourth graph "); 
 	g4.SCC(); 
 	
-	Graph g5 = new Graph (5); 
+	tarjansAlgo g5 = new tarjansAlgo (5); 
 	g5.addEdge(0, 1); 
 	g5.addEdge(1, 2); 
 	g5.addEdge(2, 3); 
